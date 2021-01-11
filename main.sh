@@ -1,4 +1,3 @@
-npm install
 mocha extract.js
 accessToken="$(cat Accesstoken.txt)";
 fileNumber="$(cat FileNumber.txt)";
