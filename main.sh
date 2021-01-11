@@ -1,4 +1,3 @@
-#cd ./ExtractAnalyticsreport
 npm install
 mocha extract.js
 accessToken="$(cat Accesstoken.txt)";
