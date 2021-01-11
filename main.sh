@@ -9,10 +9,8 @@ fileName=$(ls);
 gzip -d $fileName
 fileName=$(ls);
 mv $fileName latest.csv
-#cp $fileName $(date).csv
 cd ..
 node csvtohtml.js
 rm ./Extracted/latest.csv
 rm CSVData.zip
-mocha sendemail.js
 rm mynewfile1.html
