@@ -1,4 +1,4 @@
-mocha extract.js
+npm run extract.js
 accessToken="$(cat Accesstoken.txt)";
 fileNumber="$(cat FileNumber.txt)";
 curl --location --request GET "https://api.enterprise.apigee.com/v1/$fileNumber/result" \
@@ -14,5 +14,5 @@ cd ..
 node csvtohtml.js
 rm ./Extracted/latest.csv
 rm CSVData.zip
-mocha sendemail.js
+npm run sendemail.js
 rm mynewfile1.html
