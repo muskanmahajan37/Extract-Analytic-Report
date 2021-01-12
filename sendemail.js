@@ -7,7 +7,7 @@ var input101 = fs.readFileSync('mynewfile1.html', 'utf8');
 describe('Email Sending Job', function () {
   
     it('Send Email ', (done) => {
-        supertest.agent("https://earthport-test-dev.apigee.net/v1/analytics/")
+        supertest.agent("https://earthport-test-qa.apigee.net/v1/analytics/")
             .set('Content-Type', 'text/html')
             .post("/sendMail")
             .send(input101)
