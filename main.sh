@@ -1,3 +1,4 @@
+npm install
 mocha extract.js
 accessToken="$(cat Accesstoken.txt)";
 fileNumber="$(cat FileNumber.txt)";
@@ -13,4 +14,5 @@ cd ..
 node csvtohtml.js
 rm ./Extracted/latest.csv
 rm CSVData.zip
+mocha sendemail.js
 rm mynewfile1.html
